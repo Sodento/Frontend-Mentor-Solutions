@@ -1,0 +1,134 @@
+@use './variables/variables.scss' as *;
+
+.container {
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 2rem;
+    max-width: 75%;
+    min-height: 45rem;
+    margin: 12.5rem auto 0 auto;
+    place-content: center;
+
+
+}
+
+.profile {
+    min-height: 100%;
+    background-color: $colorNeutral-200;
+    grid-row: span 2;
+    border-radius: 10px;
+
+    &__character {
+        border-radius: 10px;
+        min-height: 70%;
+        background-color: $colorPrimary-100;
+        padding: 3rem 0 0 3rem;
+        display: flex;
+        flex-direction: column;
+        font-weight: $fontWeight-300;
+
+        &-image {
+            border-radius: 100%;
+            border: 3px solid #fff;
+            width: 8rem;
+            height: 8rem;
+        }
+
+        &-text {
+            margin-top: 4rem;
+            font-weight: $fontWeight-300;
+            color: $colorNeutral-400;
+        }
+
+        &-name {
+            font-weight: $fontWeight-300;
+            font-family: $fontFamily-Rubik;
+            color: #fff;
+
+        }
+    }
+}
+
+.selectors {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: start;
+    margin: 2rem 0 0 3rem;
+
+    &__btn {
+        color: $colorNeutral-400;
+        background-color: transparent;
+        border: none;
+        font-weight: $fontWeight-500;
+
+        &:hover {
+            color: #fff;
+            cursor: pointer;
+        }
+    }
+}
+
+.card {
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-position: 94% -8%;
+
+    &__details {
+        background-color: $colorNeutral-200;
+        border-radius: 9px;
+        min-height: 17.5rem;
+        margin-top: 4rem;
+
+        &:hover {
+            background-color: hsl(235, 45%, 30%);
+            cursor: pointer;
+        }
+
+        &-section {
+            margin: 2rem;
+            display: flex;
+
+            &-information {
+                margin-top: 2rem;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                color: #fff;
+                min-width: 100%;
+
+                &-title {
+                    font-size: 1.5rem;
+                    font-weight: $fontWeight-500;
+                }
+
+                &-ellipsis {
+                    height: 25%;
+                    width: 10%;
+
+                    &:hover {
+                        filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
+                    }
+                }
+
+                &-time {
+                    color: #fff;
+                    margin: 0 2rem;
+                    font-weight: $fontWeight-300;
+                    font-size: 6rem;
+                }
+
+                &-info {
+                    margin: 0 2rem;
+                    color: $colorNeutral-300;
+                    font-size: 1.5rem;
+                }
+            }
+
+        }
+
+
+    }
+}

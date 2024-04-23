@@ -1,0 +1,142 @@
+@font-face {
+  font-family: "Rubik", sans-serif;
+  src: url(https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap);
+}
+.container {
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 2rem;
+  max-width: 75%;
+  min-height: 45rem;
+  margin: 12.5rem auto 0 auto;
+  place-content: center;
+}
+
+.profile {
+  min-height: 100%;
+  background-color: hsl(235, 46%, 20%);
+  grid-row: span 2;
+  border-radius: 10px;
+}
+.profile__character {
+  border-radius: 10px;
+  min-height: 70%;
+  background-color: hsl(246, 80%, 60%);
+  padding: 3rem 0 0 3rem;
+  display: flex;
+  flex-direction: column;
+  font-weight: 300;
+}
+.profile__character-image {
+  border-radius: 100%;
+  border: 3px solid #fff;
+  width: 8rem;
+  height: 8rem;
+}
+.profile__character-text {
+  margin-top: 4rem;
+  font-weight: 300;
+  color: hsl(236, 100%, 87%);
+}
+.profile__character-name {
+  font-weight: 300;
+  font-family: "Rubik", sans-serif;
+  color: #fff;
+}
+
+.selectors {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: start;
+  margin: 2rem 0 0 3rem;
+}
+.selectors__btn {
+  color: hsl(236, 100%, 87%);
+  background-color: transparent;
+  border: none;
+  font-weight: 500;
+}
+.selectors__btn:hover {
+  color: #fff;
+  cursor: pointer;
+}
+
+.card {
+  border-radius: 10px;
+  background-repeat: no-repeat;
+  background-position: 94% -8%;
+}
+.card__details {
+  background-color: hsl(235, 46%, 20%);
+  border-radius: 9px;
+  min-height: 17.5rem;
+  margin-top: 4rem;
+}
+.card__details:hover {
+  background-color: hsl(235, 45%, 30%);
+  cursor: pointer;
+}
+.card__details-section {
+  margin: 2rem;
+  display: flex;
+}
+.card__details-section-information {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  min-width: 100%;
+}
+.card__details-section-information-title {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.card__details-section-information-ellipsis {
+  height: 25%;
+  width: 10%;
+}
+.card__details-section-information-ellipsis:hover {
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
+}
+.card__details-section-information-time {
+  color: #fff;
+  margin: 0 2rem;
+  font-weight: 300;
+  font-size: 6rem;
+}
+.card__details-section-information-info {
+  margin: 0 2rem;
+  color: hsl(235, 45%, 61%);
+  font-size: 1.5rem;
+}
+
+@font-face {
+  font-family: "Rubik", sans-serif;
+  src: url(https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap);
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  background-color: hsl(226, 43%, 10%);
+  place-content: center;
+  line-height: 1.3;
+}
+
+/*# sourceMappingURL=style.css.map */
