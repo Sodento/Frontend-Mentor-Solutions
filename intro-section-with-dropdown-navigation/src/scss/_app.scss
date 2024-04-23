@@ -1,0 +1,173 @@
+@use './variables/variables.scss' as *;
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: $colorNeutral-200;
+    padding: 2rem 4rem;
+
+    &__list {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        min-width: 40%;
+
+        &-btn {
+            color: $colorNeutral-200;
+            border: none;
+            cursor: pointer;
+            background-color: transparent;
+            font-weight: $fontWeight-700;
+
+            &-arrow {
+                &:hover {
+                    filter: brightness(0) saturate(100%) invert(5%) sepia(0%) saturate(3083%) hue-rotate(205deg) brightness(95%) contrast(94%);
+
+                }
+            }
+
+            &:hover {
+                color: $colorNeutral-300;
+            }
+        }
+    }
+
+    &__enterance {
+        display: flex;
+        gap: 1rem;
+
+        &-login {
+            background-color: transparent;
+            font-weight: $fontWeight-700;
+            cursor: pointer;
+            border: none;
+            padding: 1rem;
+            min-width: 12rem;
+            color: $colorNeutral-200;
+
+            &:hover {
+                color: $colorNeutral-300;
+            }
+        }
+
+        &-register {
+            background-color: transparent;
+            font-weight: $fontWeight-700;
+            cursor: pointer;
+            border-radius: 10px;
+            padding: 1rem;
+            min-width: 12rem;
+            border: 2px solid $colorNeutral-200;
+            color: $colorNeutral-200;
+
+            &:hover {
+                color: $colorNeutral-300;
+                border: 2px solid $colorNeutral-300;
+
+            }
+        }
+    }
+}
+
+.options {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    visibility: hidden;
+    background-color: #fff;
+    gap: 1.5rem;
+    margin-top: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.2);
+    min-width: 10rem;
+    align-items: start;
+    padding: 2rem 0;
+    cursor: default;
+
+    &__btn {
+        background-color: transparent;
+        border: none;
+        color: $colorNeutral-200;
+        cursor: pointer;
+        padding: 0 2rem;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+
+
+    &__visible {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+.container {
+    display: flex;
+    gap: 20rem;
+    margin: 2rem 16rem;
+}
+
+.information {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 50%;
+
+    &__text {
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+        font-family: $fontFamily-main;
+
+
+        &-title {
+            font-size: 9.8rem;
+            line-height: 0.8;
+            font-weight: $fontWeight-500;
+            font-weight: 600;
+        }
+
+        &-info {
+            color: $colorNeutral-200;
+            font-weight: $fontWeight-500;
+            max-width: 70%;
+            font-weight: 600;
+            line-height: 1.5;
+        }
+
+        &-btn {
+            max-width: 25%;
+            padding: 1.5rem;
+            font-weight: $fontWeight-700;
+            font-size: 1.5rem;
+            border-radius: 10px;
+            background-color: $colorNeutral-300;
+            color: $colorNeutral-100;
+
+            &:hover {
+                cursor: pointer;
+                background-color: $colorNeutral-100;
+                color: $colorNeutral-300;
+                border: 2px solid $colorNeutral-300;
+            }
+        }
+    }
+
+    &__companies {
+        display: flex;
+        align-items: center;
+        margin-top: 6rem;
+        gap: 6rem;
+    }
+
+
+}
+
+.hero-image {
+    max-width: 35%;
+
+}

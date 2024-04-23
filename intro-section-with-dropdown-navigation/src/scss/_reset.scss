@@ -1,0 +1,19 @@
+@use './variables/variables.scss' as *;
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: $colorNeutral-100;
+    font-size: 1.8rem;
+    font-weight: $fontWeight-500;
+}

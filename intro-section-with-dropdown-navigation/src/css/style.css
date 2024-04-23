@@ -1,0 +1,173 @@
+@font-face {
+  font-family: "Epilogue", sans-serif;
+  src: url("https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap");
+}
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  color: hsl(0, 0%, 41%);
+  padding: 2rem 4rem;
+}
+.header__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 40%;
+}
+.header__list-btn {
+  color: hsl(0, 0%, 41%);
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  font-weight: 700;
+}
+.header__list-btn-arrow:hover {
+  filter: brightness(0) saturate(100%) invert(5%) sepia(0%) saturate(3083%) hue-rotate(205deg) brightness(95%) contrast(94%);
+}
+.header__list-btn:hover {
+  color: hsl(0, 0%, 8%);
+}
+.header__enterance {
+  display: flex;
+  gap: 1rem;
+}
+.header__enterance-login {
+  background-color: transparent;
+  font-weight: 700;
+  cursor: pointer;
+  border: none;
+  padding: 1rem;
+  min-width: 12rem;
+  color: hsl(0, 0%, 41%);
+}
+.header__enterance-login:hover {
+  color: hsl(0, 0%, 8%);
+}
+.header__enterance-register {
+  background-color: transparent;
+  font-weight: 700;
+  cursor: pointer;
+  border-radius: 10px;
+  padding: 1rem;
+  min-width: 12rem;
+  border: 2px solid hsl(0, 0%, 41%);
+  color: hsl(0, 0%, 41%);
+}
+.header__enterance-register:hover {
+  color: hsl(0, 0%, 8%);
+  border: 2px solid hsl(0, 0%, 8%);
+}
+
+.options {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+  visibility: hidden;
+  background-color: #fff;
+  gap: 1.5rem;
+  margin-top: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 6px 6px rgba(0, 0, 0, 0.2);
+  min-width: 10rem;
+  align-items: start;
+  padding: 2rem 0;
+  cursor: default;
+}
+.options__btn {
+  background-color: transparent;
+  border: none;
+  color: hsl(0, 0%, 41%);
+  cursor: pointer;
+  padding: 0 2rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.options__visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.container {
+  display: flex;
+  gap: 20rem;
+  margin: 2rem 16rem;
+}
+
+.information {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 50%;
+}
+.information__text {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  font-family: "Epilogue", sans-serif;
+}
+.information__text-title {
+  font-size: 9.8rem;
+  line-height: 0.8;
+  font-weight: 500;
+  font-weight: 600;
+}
+.information__text-info {
+  color: hsl(0, 0%, 41%);
+  font-weight: 500;
+  max-width: 70%;
+  font-weight: 600;
+  line-height: 1.5;
+}
+.information__text-btn {
+  max-width: 25%;
+  padding: 1.5rem;
+  font-weight: 700;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  background-color: hsl(0, 0%, 8%);
+  color: hsl(0, 0%, 98%);
+}
+.information__text-btn:hover {
+  cursor: pointer;
+  background-color: hsl(0, 0%, 98%);
+  color: hsl(0, 0%, 8%);
+  border: 2px solid hsl(0, 0%, 8%);
+}
+.information__companies {
+  display: flex;
+  align-items: center;
+  margin-top: 6rem;
+  gap: 6rem;
+}
+
+.hero-image {
+  max-width: 35%;
+}
+
+@font-face {
+  font-family: "Epilogue", sans-serif;
+  src: url("https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap");
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: hsl(0, 0%, 98%);
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+/*# sourceMappingURL=style.css.map */
