@@ -80,12 +80,13 @@
   font-family: "Fraunces", sans-serif;
   text-align: center;
   font-size: 1.5rem;
-  border-bottom: 1rem solid hsl(51, 100%, 49%);
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
+  border-bottom: 1rem solid rgba(250, 212, 0, 0.3);
+  border-radius: 10px;
 }
 .information__container-transform button:hover {
   cursor: pointer;
+  border-bottom: 1rem solid #fad400;
+  transition: all ease-in-out 1s;
 }
 .information__container-egg {
   background-image: url("../images/desktop/image-transform.jpg");
@@ -121,12 +122,13 @@
   font-family: "Fraunces", sans-serif;
   text-align: center;
   font-size: 1.5rem;
-  border-bottom: 1rem solid hsl(7, 99%, 70%);
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
+  border-bottom: 1rem solid rgba(254, 120, 103, 0.3);
+  border-radius: 10px;
 }
 .information__container-stand button:hover {
   cursor: pointer;
+  border-bottom: 1rem solid #fe7867;
+  transition: all ease-in-out 1s;
 }
 .information__container-cherry {
   background-image: url("../images/desktop/image-graphic-design.jpg");
