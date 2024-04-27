@@ -1,0 +1,291 @@
+@use './variables/variables.scss' as *;
+
+
+.container {
+    min-height: 300vh;
+
+
+    &__card {
+        transform: translateY(-5%);
+        margin: auto;
+        min-height: 200vh;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+    }
+}
+
+.header {
+
+    &__container {
+        background-image: url('../images/image-hero-desktop.jpg');
+        background-repeat: no-repeat;
+        min-height: 60vh;
+        background-size: cover;
+        width: 100%;
+        display: flex;
+        padding: 6rem 18rem;
+
+    }
+
+    &__navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 4rem;
+        width: 100%;
+        height: 20%;
+
+        &-selections {
+            display: flex;
+            align-items: center;
+            gap: 3rem;
+
+            &-btn {
+                text-decoration: none;
+                color: white;
+            }
+        }
+
+        &-logo {
+            width: 10%;
+        }
+    }
+}
+
+.monitor {
+    &__container {
+        background-color: white;
+        width: 100%;
+        border-radius: 1rem;
+
+    }
+
+    &__logo {
+        width: 7.5%;
+        position: absolute;
+        left: 45%;
+        top: -2%;
+    }
+
+    &__card {
+        padding: 5rem;
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+        justify-content: center;
+
+
+        &-context {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 2rem;
+
+
+
+            &-text {
+                color: $colorNeutral-200;
+                font-size: 1.8rem;
+            }
+        }
+
+        &-buttons {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            &-back {
+                min-width: 25%;
+                background-color: $colorPrimary-100;
+                color: white;
+                border: none;
+                border-radius: 4rem;
+                padding: 2rem;
+                font-weight: $fontWeight-700;
+
+                &:hover {
+                    cursor: pointer;
+                    background-color: $colorPrimary-200;
+                }
+            }
+
+            &-bookmark {
+                min-width: 25%;
+                background-color: rgba($color: $colorNeutral-200, $alpha: 0.1);
+                color: $colorNeutral-200;
+                border: none;
+                border-radius: 4rem;
+                font-weight: $fontWeight-700;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding-right: 2.5rem;
+
+                & img {
+                    border-radius: 100%;
+                }
+
+                &:hover {
+                    cursor: pointer;
+                }
+
+                &-bookmarked {
+                    padding-right: 1.5rem;
+                    color: $colorPrimary-100;
+
+                    & img {
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.dashboard {
+    &__container {
+        background-color: white;
+        width: 100%;
+        border-radius: 1rem;
+        padding-bottom: 4rem;
+    }
+
+    &__cards {
+        display: flex;
+        align-items: center;
+        margin: 5rem 5rem 3rem;
+        gap: 4rem;
+
+        &-card {
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            width: 30%;
+
+            &-text {
+                color: $colorNeutral-200;
+            }
+
+            &-border {
+                border-right: 1px solid rgba($color: $colorNeutral-200, $alpha: 0.5);
+            }
+        }
+    }
+
+    &__bar {
+        margin: 0 5rem;
+        height: 1.5rem;
+        border-radius: 1rem;
+        background-color: rgba($color: $colorNeutral-100, $alpha: 0.1);
+
+        &-color {
+            width: 75%;
+            background-color: $colorPrimary-100;
+            height: 1.5rem;
+            border-radius: 1rem;
+        }
+
+    }
+}
+
+.about {
+    &__container {
+        background-color: white;
+        width: 100%;
+        border-radius: 1rem;
+    }
+
+    &__card {
+        display: flex;
+        flex-direction: column;
+        padding: 5rem;
+        gap: 3rem;
+
+        &-title {
+            color: $colorNeutral-100;
+            font-size: 2rem;
+        }
+
+        &-text {
+            color: $colorNeutral-200;
+        }
+    }
+
+}
+
+.card {
+    margin: 0 5rem 2.5rem;
+    padding: 3rem;
+    border: 1px solid rgba($color: $colorNeutral-100, $alpha: 0.2);
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+
+    &__info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &-title {
+            color: $colorNeutral-100;
+            font-size: 2rem;
+        }
+
+        &-text {
+            color: $colorPrimary-100;
+            font-weight: $fontWeight-500;
+
+        }
+    }
+
+    &__description {
+        color: $colorNeutral-200;
+
+    }
+
+    &__footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &-amount {
+            color: $colorNeutral-100;
+            font-weight: $fontWeight-700;
+            font-size: 3rem;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+
+            & span {
+                color: rgba($color: $colorNeutral-200, $alpha: 0.5);
+                font-size: 1.5rem;
+            }
+        }
+
+        &-button {
+            border: none;
+            color: white;
+            background-color: $colorPrimary-100;
+            font-weight: $fontWeight-700;
+            padding: 1.8rem;
+            border-radius: 3rem;
+            width: 30%;
+
+            &-stock {
+                background-color: $colorNeutral-100;
+            }
+
+            &:hover {
+                cursor: pointer;
+                background-color: $colorPrimary-200;
+            }
+        }
+    }
+}
+
+.visible {
+    opacity: 50%;
+}
