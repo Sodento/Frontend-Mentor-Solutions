@@ -1,0 +1,33 @@
+@use './variables/variables.scss' as *;
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    overflow-x: hidden;
+    line-height: 1.5;
+    font-size: 16px;
+    font-family: $fontFamily-Overpass;
+    font-weight: $fontWeight-300;
+    background-color: $colorNeutral-100;
+    color: $colorNeutral-100;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: $fontWeight-300;
+    font-family: $fontFamily-Overpass;
+}
