@@ -1,0 +1,22 @@
+@use './variables/variables.scss' as *;
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 24px;
+    font-family: $fontFamily-Main;
+    font-weight: $fontWeight-700;
+    background-color: $colorNeutral-400;
+    place-content: center;
+    line-height: 1.5;
+}
