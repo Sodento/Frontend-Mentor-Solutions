@@ -109,8 +109,9 @@
 }
 .monitor__card-buttons-bookmark-bookmarked {
   padding-right: 1.5rem;
-  color: hsl(176, 50%, 47%);
+  color: hsl(176, 72%, 28%);
 }
+
 .dashboard__container {
   background-color: white;
   width: 100%;
@@ -142,7 +143,7 @@
   background-color: rgba(0, 0, 0, 0.1);
 }
 .dashboard__bar-color {
-  width: 75%;
+  width: 89%;
   background-color: hsl(176, 50%, 47%);
   height: 1.5rem;
   border-radius: 1rem;
@@ -218,16 +219,225 @@
   border-radius: 3rem;
   width: 30%;
 }
-.card__footer-button-stock {
-  background-color: hsl(0, 0%, 0%);
-}
 .card__footer-button:hover {
   cursor: pointer;
   background-color: hsl(176, 72%, 28%);
 }
+.card__footer-button-stock {
+  background-color: hsl(0, 0%, 0%);
+}
+.card__footer-button-stock:hover {
+  cursor: no-drop;
+  background-color: hsl(0, 0%, 0%);
+  opacity: 0.9;
+}
 
 .visible {
   opacity: 50%;
+}
+
+.modal__container {
+  position: fixed;
+  display: flex;
+  border-radius: 1rem;
+  justify-content: right;
+  background-color: white;
+  transform: translateY(-15%);
+  z-index: 1000;
+}
+.modal__close {
+  position: absolute;
+  transform: translate(-150%, 150%);
+  opacity: 0.4;
+}
+.modal__close:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+.modal__card {
+  padding: 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.modal__card-title {
+  font-size: 3rem;
+}
+.modal__card-description {
+  color: hsl(0, 0%, 48%);
+}
+.modal__card-items {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.modalcard__container {
+  border: 1px solid rgba(122, 122, 122, 0.5);
+  border-radius: 0.5rem;
+  align-items: center;
+  gap: 4rem;
+  padding: 2rem 0;
+}
+.modalcard__container-selected {
+  border: 2px solid hsl(176, 50%, 47%);
+}
+.modalcard__header {
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.modalcard__header-selection {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+.modalcard__header-selection-select {
+  display: flex;
+  gap: 2rem;
+}
+.modalcard__header-selection-select-btn {
+  border-radius: 100%;
+  background-color: transparent;
+  border: 1px solid rgba(122, 122, 122, 0.5);
+  width: 3rem;
+  height: 3rem;
+}
+.modalcard__header-selection-select-btn:hover {
+  cursor: pointer;
+  border: 1px solid rgba(60, 180, 172, 0.5);
+}
+.modalcard__header-selection-select-btn-clicked {
+  background: radial-gradient(circle at 50%, hsl(176, 50%, 47%) 35%, transparent 45%);
+}
+.modalcard__header-selection-select-title {
+  font-size: 2rem;
+}
+.modalcard__header-selection-select-title:hover {
+  color: hsl(176, 50%, 47%);
+  cursor: pointer;
+}
+.modalcard__header-selection-select-pledge {
+  color: hsl(176, 50%, 47%);
+  font-weight: 700;
+}
+.modalcard__header-selection-select-pledge-visiblity {
+  visibility: hidden;
+}
+.modalcard__header-amounts {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.modalcard__header-amounts-amount {
+  font-size: 2rem;
+}
+.modalcard__header-amounts-left {
+  color: hsl(0, 0%, 48%);
+}
+.modalcard__description {
+  color: hsl(0, 0%, 48%);
+  padding: 2rem 2rem 1rem 7rem;
+}
+.modalcard__selected {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid rgba(122, 122, 122, 0.5);
+  padding: 2rem 0 0 0;
+}
+.modalcard__selected-text {
+  color: hsl(0, 0%, 48%);
+  padding-left: 2rem;
+}
+.modalcard__selected-buttons {
+  display: flex;
+  gap: 2rem;
+  padding-right: 2rem;
+  justify-content: end;
+}
+.modalcard__selected-buttons-amount {
+  border-radius: 3rem;
+  padding: 1.5rem 0.5rem;
+  width: 35%;
+  border: 1px solid rgba(122, 122, 122, 0.5);
+  text-align: center;
+  font-family: "Commissioner", sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  background: no-repeat url("../images/icon-dollar.svg");
+  background-position: left;
+  background-size: 10%;
+  background-position-x: 20%;
+}
+.modalcard__selected-buttons-amount:hover {
+  cursor: pointer;
+  border: 1px solid hsl(176, 50%, 47%);
+}
+.modalcard__selected-buttons-amount:focus {
+  outline: 1px solid hsl(176, 50%, 47%);
+}
+.modalcard__selected-buttons-amount::placeholder {
+  position: absolute;
+  left: 2rem;
+  color: hsl(0, 0%, 48%);
+}
+.modalcard__selected-buttons-cnt {
+  font-family: "Commissioner", sans-serif;
+  width: 35%;
+  border-radius: 3rem;
+  padding: 1.5rem 0.5rem;
+  background-color: hsl(176, 50%, 47%);
+  font-weight: 700;
+  color: #fff;
+  border: none;
+}
+.modalcard__selected-buttons-cnt:hover {
+  background-color: hsl(176, 72%, 28%);
+  cursor: pointer;
+}
+
+.support__container {
+  background-color: white;
+  width: 80%;
+  border-radius: 1rem;
+  display: flex;
+  gap: 4rem;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 3rem;
+  position: fixed;
+}
+.support__check {
+  width: 15%;
+}
+.support__card {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.support__card-text {
+  color: hsl(0, 0%, 48%);
+  font-size: 1.9rem;
+}
+.support__card-btn {
+  background-color: hsl(176, 50%, 47%);
+  border: none;
+  color: white;
+  font-family: "Commissioner", sans-serif;
+  font-weight: 700;
+  padding: 1.75rem 3.5rem;
+  border-radius: 3rem;
+}
+.support__card-btn:hover {
+  background-color: hsl(176, 72%, 28%);
+  cursor: pointer;
 }
 
 *,
