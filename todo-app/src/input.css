@@ -1,0 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+    overflow-x: hidden;
+}
+
+.bg-gradient-to-tl {
+    background-image: linear-gradient(to top left,hsl(280, 87%, 65%),hsl(192, 100%, 67%));
+}
+
