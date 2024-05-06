@@ -10,7 +10,3 @@ html {
     overflow-x: hidden;
 }
 
-.bg-gradient-to-tl {
-    background-image: linear-gradient(to top left,hsl(280, 87%, 65%),hsl(192, 100%, 67%));
-}
-
